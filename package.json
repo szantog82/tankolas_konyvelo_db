@@ -1,0 +1,26 @@
+{
+  "name": "Tankolas-konyvelo-nodejs",
+  "version": "0.0.1",
+  "description": "NodeJs backend a tankoláskönyvelő apphoz",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3",
+    "body-parser": "^1.19.0"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://bead-almondine-petroleum.glitch.me/"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
