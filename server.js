@@ -50,7 +50,7 @@ app.post("/upload_data", function(req, res){
     chalks: chalks
   };
   if (car.licensePlateNumber.length > 3){
-  mongoCollection.deleteMany({ plateNumber: car.licensePlateNumber}, function (err, res){
+  mongoCollection.deleteMany({ plateNumber: car.licensePlateNumber}, function (err, resp){
     console.log("inserting new data; plateNumber: " + car.licensePlateNumber + ", " + "no. of chalks:" + chalks.length);
       mongoCollection.insertOne(upload);
     console.log("deleteMany err:" + err);
