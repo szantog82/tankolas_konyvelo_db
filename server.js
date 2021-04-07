@@ -54,7 +54,7 @@ app.post("/upload_data", function(req, res){
       mongoCollection.insertOne(upload);
     console.log("deleteMany err:" + err);
   });
-  console.log("inserting new data; plateNumber: " + car.licensePlateNumber);
+  console.log("inserting new data; plateNumber: " + car.licensePlateNumber + ", " + "no. of chalks:" + chalks.length);
   }
 });
 
